@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link href="style.css" rel="stylesheet">
     <link href="dark.css" rel="stylesheet">
@@ -20,7 +22,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="img/ic/browserconfig.xml?v=1">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    
+
     <meta name="msapplication-config" content="img/ic/browserconfig.xml">
     <meta name="theme-color" content="#cd7b3a">
     <meta name="keywords" content="minecraft, smp, hobbitcraft, whitelisted, server, hermitcraft" />
@@ -36,77 +38,64 @@
 <body>
     <div class="container-fluid HC-background">
         <div class="container text-center">
-            <img src="hctitle.png" height="30%" width="30%">
+            <img src="hctitle.webp" height="50%" width="50%">
         </div>
     </div>
-   <!--Navigation bar-->
-   <div id="navbar">
+    <!--Navigation bar-->
+    <div id="navbar">
 
-   </div>
-   
-   <script>
-   $(function(){
-     $("#navbar").load("../navbar/navbar.html");
-   });
-   </script>
-   <!--end of Navigation bar-->
+    </div>
+
+    <script>
+        $(function () {
+            $("#navbar").load("../navbar/navbar.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
     <div class="container">
         <center>
-            <row>
-                <h2 id="Hobbitcraft">Hobbitcraft SMP</h2>
-                <p>Now boasting over 2 years of SMP-running experience; Hobbitcraft has a strong,
-                    committed and talented community always looking for new members.
-                    Now whitelist-free, we are receiving any members, new and old to Minecraft to our server.
-                    Feel free to join our <a href='https://discord.gg/S5PsRp9c9Q'>discord server here</a> or the navbar
-                </p>
-                <hr>
-                <div class="col-lg-4">
+            <div class="row">
+                <div class="col">
+                    <h2 id="Hobbitcraft">Hobbitcraft SMP</h2>
+                    <p>Now boasting over 4 years of SMP-running experience; Hobbitcraft has a strong,
+                        committed and talented community always looking for new members.
+                        Apply to join our community today on the navbar!
+                        Also feel free to join our <a href='https://discord.gg/vrc6braHKe'>discord server here</a>
+                        or the navbar
+                    </p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
                     <h3>Server Info</h3>
                     <p>Server IP: <kbd>play.hobbitcraft.cc</kbd></p>
                     <p>Host: <kbd><a href="https://bloom.host">https://bloom.host</a></kbd></p>
-                    <p>Version: <kbd>1.19.3/4</kbd></p>
+                    <p>Version: <kbd>1.20.4</kbd></p>
                     <p>View Distance: <kbd>10</kbd></p>
                     <p>Simulation Distance: <kbd>6</kbd></p>
                 </div>
-
-            </row>
-            <row>
-                <div class="col-lg-4">
-                    <h3><a href="https://map.hobbitcraft.cc"><img src="img/dynmap.png" height="128" width="128"></img></a></h3>
+                <div class="col">
+                    <h3><a href="https://map.hobbitcraft.cc"><img src="img/dynmap.png" height="128" width="128"></a></h3>
                     <p> Here you can view a 3D overview map of Hobbitcraft.&nbsp;</p>
                 </div>
-                <div class="col-lg-4">
-                    <h3><a href="https://shop.hobbitcraft.cc">Donation Link</a></h3>
+                <div class="col">
+                    <h3><a href="/donate">Donate</a></h3>
                     <p>You can donate to keep the server running! You
                         also get a cool role in the discord server as well as in game perks for doing so!</p>
                 </div>
-                <div class="col-lg-4">
-                    <h3><a href="/resourcepack">Resource Packs</a></h3>
-                    <p>Here is where you can get the current and previous resource pack.&nbsp; &nbsp; &nbsp;&nbsp; </p>
-                </div>
-                <div class="col-lg-4">
-                    <a href="/files">
-                        <h3>Hobbitcraft Files</h3>
-                    </a>
+                <div class="col">
+                    <h3><a href="/files">Hobbitcraft Files</a></h3>
+                    
                     <p>Here is where you can find all of the files like world downloads, resource packs, modpacks, and
                         whatever else.</p>
                 </div>
-                <div class="col-lg-4">
-                    <a href="highlights">
-                        <h3>Community Highlights</h3>
-                    </a>
-                    This is a section where we highlight some of the amazing builds our players make! We used to update
-                    it every saturday, this is from Season 7.
-                </div>
-            </row>
-            </row>
+            </div>
         </center>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-            </script>
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous">
+        </script>
 </body>
-
-<br>
-<br>
 
 </html>

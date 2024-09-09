@@ -37,7 +37,7 @@
     <div class="container-fluid HC-background">
         <div class="container text-center">
             <img class="HC-title"
-                src="../img/ic/hctitle.png">
+                src="../img/ic/hctitle.webp">
         </div>
     </div>
  <!--Navigation bar-->

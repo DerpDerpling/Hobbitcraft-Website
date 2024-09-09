@@ -11,8 +11,7 @@
     <link href="../style.css" rel="stylesheet">
     <link href="../dark.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    
- 
+
     <link rel="apple-touch-icon" sizes="180x180" href="../img/ic/apple-touch-icon.png?v=1">
     <link rel="icon" type="image/png" sizes="32x32" href="../img/ic/favicon-32x32.png?v=1">
     <link rel="icon" type="image/png" sizes="16x16" href="../img/ic/favicon-16x16.png?v=1">
@@ -33,70 +32,201 @@
     <meta property="og:image" content="https://hobbitcraft.cc/img/ic/navicon.png" />
 </head>
 
+<style>
+    .icon {
+        margin: 1rem;
+        width: 64px;
+        height: 64px;
+    }
+</style>
+
 <body>
     <div class="container-fluid HC-background">
         <div class="container text-center">
             <img class="HC-title" src="../img/ic/hobbitcraftfilesweb.png">
         </div>
     </div>
-<!--Navigation bar-->
-<div id="navbar">
-</div>
-<script>
-$(function(){
-  $("#navbar").load("../navbar/navbar.html");
-});
-</script>
-<!--end of Navigation bar-->
-    <div class="container text-center">
+    <!--Navigation bar-->
+    <div id="navbar"></div>
+    <script>
+        $(function () {
+            $("#navbar").load("../navbar/navbar.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="container">
         <br>
-        <h1>This is the official place for all Hobbitcraft files! All world downloads are below.</h1>
+        <h1 class="text-center">Official Hobbitcraft Files</h1>
+        <p class="text-center">Explore all world and resource pack downloads below!</p>
         <hr>
-        <h2>Special World Downloads</h2>
-        <hr>
-        <p><img src="../img/ic/hcCreative64.png" alt="Creative Logo"> The download for Creative Season 1 is <a
-                href="Hobbitcraft_Creative.zip">here</a></p>
-            <p><img src="../img/ic/hc7c.png" width="64" height="64" alt="Creative Logo"> The download for the creative world that ran along side <img src="../img/ic/naviconhc7.png" alt="HC7"> is <a
-                href="Hobbitcraft_Creative.zip">here</a></p>
-        <br>
-        <h2>Seasonal World Downloads</h2>
-        <hr>
-        <br>
-        <p><img src="../img/ic/hc7regions.png" width='128' height='128'alt="HC7"> The world download for the Season 7 <a href="Hobbitcraft_7.zip">here</a></p>
-        <p><img src="../img/ic/hc664.png" alt="HC6"> The world download for the Season 6 <a href="https://github.com/HobbitcraftServer/Hobbitcraft-Website/releases/download/S6WDL/Hobbitcraft_6.zip">here</a></p>
-        <p><img src="../img/ic/hcskygrid64.png" alt="SkyGrid"> The download for SkyGrid+Creative is <a
-                href="https://github.com/HobbitcraftServer/Hobbitcraft-Website/releases/download/WorldDownload/Creative_and_SkyGrid_UNZIP_ME.zip">here</a></p>
-        <p><img src="../img/ic/hc564.png" alt="hc5"> The world download for the Season 5 world is <a
-                href="https://github.com/HobbitcraftServer/Files/releases/download/hc5/Hobbitcraft_Five.zip">here</a>
-        </p>
-        <p><img src="../img/ic/hc464.png" alt="hc4"> The world download for the Season 4 modpack/world is <a
-                href="https://github.com/DerpDerpling/Hobbitcraft-S4/releases">here</a></p>
-        <p><img src="../img/ic/hc64x64.png" alt="hc3"> The world download for the Season 3 world is <a
-                href="https://github.com/DerpDerpling/Hobbitcraft-Files/releases/download/S3/Hobbitcraft_3.zip">here</a>
-        </p>
-        <p><img src="../img/ic/hc2.png" alt="hc2"> The world download for the Season 2 world is <a
-                href="https://github.com/DerpDerpling/Hobbitcraft-Files/releases/download/S2/Hobbitcraft-2.zip">here</a>
-        </p>
-        <br>
-        <h2>Resource Pack Downloads</h2>
-        <hr>
-        <p><img src="pack.png" alt="resourcepackicon"> All legacy resource pack downloads can
-            be found <a href="ResourcePacks.zip">here</a></p>
-            <p><img src="../img/ic/resourcepackhcweb.png" alt="resourcepackicon"> Current resourcepacks can be found <a href=../resourcepack>here</a></p>
-        <br>
-        <h2>Terraria World Download</h2>
-        <hr>
-        <p><img src="../img/ic/hc2Dnobgsmall.png" alt="hc2d"> The download for the Terraria world is <a
-                href="files/hcterraria.zip">here</a> </p>
-        <br>
+
+        <!-- Special World Downloads -->
+        <h2 class="text-center">Special World Downloads</h2>
+        <div class="row">
+            <!-- Creative s2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hcCreative64.png" class="card-img-top icon " alt="Creative Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative Season 1</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="Hobbitcraft_Creative.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Creative S7 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc7c.png" class="card-img-top icon" alt="Creative Logo">
+                    <div class="card-body">
+                        <h5 class="card-title">Creative + HC7</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="HC7_Creative.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Seasonal World Downloads -->
+        <h2 class="text-center">Seasonal World Downloads</h2>
+        <div class="row">
+            <!-- S7 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc7regions.png" class="card-img-top icon" alt="HC7">
+                    <div class="card-body">
+                        <h5 class="card-title">Season 7</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="Hobbitcraft_7.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- S6 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc664.png" class="card-img-top icon" alt="HC6">
+                    <div class="card-body">
+                        <h5 class="card-title">Season 6</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="https://github.com/HobbitcraftServer/Hobbitcraft-Website/releases/download/S6WDL/Hobbitcraft_6.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+        
+            <!-- SkyGrid+Creative -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hcskygrid64.png" class="card-img-top icon" alt="SkyGrid">
+                    <div class="card-body">
+                        <h5 class="card-title">SkyGrid+Creative</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="https://github.com/HobbitcraftServer/Hobbitcraft-Website/releases/download/WorldDownload/Creative_and_SkyGrid_UNZIP_ME.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- S5 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc564.png" class="card-img-top icon" alt="Season 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Season 5</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="https://github.com/HobbitcraftServer/Files/releases/download/hc5/Hobbitcraft_Five.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- S4 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc464.png" class="card-img-top icon" alt="Season 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Season 4</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="https://github.com/DerpDerpling/Hobbitcraft-S4/releases" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- S3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc64x64.png" class="card-img-top icon" alt="Season 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Season 3</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="https://github.com/DerpDerpling/Hobbitcraft-Files/releases/download/S3/Hobbitcraft_3.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- S2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/hc2.png" class="card-img-top icon" alt="Season 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Season 2</h5>
+                        <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                        <a href="https://github.com/DerpDerpling/Hobbitcraft-Files/releases/download/S2/Hobbitcraft-2.zip" class="btn btn-primary">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Resource Packs -->
+        <h2 class="text-center">Resource Pack Downloads</h2>
+        <div class="row">
+            <!-- Legacy -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="pack.png" class="card-img-top icon" alt="Resource Pack Icon">
+                    <div class="card-body">
+                        <h5 class="card-title">Legacy Resource Packs</h5>
+                        <p class="card-text">Download all legacy resource packs from this link.</p>
+                        <a href="ResourcePacks.zip" class="btn btn-primary">Get the legacy packs!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Updated -->
+            <div class="col-md-4 mb-3">
+                <div class="card h-100">
+                    <img src="../img/ic/resourcepackhcweb.png" class="card-img-top icon" alt="Current Resource Packs">
+                    <div class="card-body">
+                        <h5 class="card-title">Current Resource Packs</h5>
+                        <p class="card-text">Get the latest resource packs for the current season.</p>
+                        <a href="../resourcepack" class="btn btn-primary">Get the latest pack!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <h2 class="text-center">Seasonal World Downloads</h2>
+            <div class="row">
+              <!-- Terraria World -->
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <img src="../img/ic/hc2Dnobgsmall.png" class="card-img-top icon" alt="Terraria">
+                        <div class="card-body">
+                            <h5 class="card-title">Terraria World</h5>
+                            <p class="card-text">Season Start: <br>Season End: <br>File Size: GB</p>
+                            <a href="files/hcterraria.zip" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                </div>  
+
+            </div>
     </div>
+
+    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    </main>
-    <br>
-    <br>
-    <br>
 </body>
 
 </html>
