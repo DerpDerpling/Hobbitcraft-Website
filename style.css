@@ -35,12 +35,9 @@
   
 }
 .card{
-  background-color: rgb(36, 39, 41);
+  background-color: rgb(28, 30, 32);
 }
 .card-body {
-  background-color:rgb(36, 39, 41)
-}
-.card h-100 {
   background-color:rgb(36, 39, 41)
 }
 a {
