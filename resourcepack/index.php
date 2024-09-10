@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 
@@ -36,8 +37,7 @@
 <body>
     <div class="container-fluid HC-background">
         <div class="container text-center">
-            <img class="HC-title"
-                src="../img/ic/hctitle.webp">
+    		<img class="HC-title" style="width:40rem" src="../hctitle.webp">
         </div>
     </div>
  <!--Navigation bar-->
@@ -61,10 +61,44 @@ $(function(){
         closedir($handle);
     }
     ?>
-<h1>List of Resourcepacks:</h1>
+        <div style="justify-content: center; display:flex;">
+        	<h1>List of Resourcepacks:</h1>
+        </div>
 
-<ul><?php echo $thelist; ?></ul>
+        <ul class="resource-list"><?php echo $thelist; ?></ul>
 </body>
+<style>
+ul.resource-list {
+    list-style-type: none;
+    padding: 0;
+    width: 30%;
+    margin: 0 auto; /* Center the list on the page */
+}
+
+ul.resource-list li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #606c78;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+ul.resource-list li a {
+    text-decoration: none;
+    color: #17a2b8;
+    font-weight: bold;
+}
+
+ul.resource-list li:hover {
+    background-color: #495057;
+}
+
+ul.resource-list li a:hover {
+    color: #80deea;
+}
+
+</style>
 
 <br>
 <br>
