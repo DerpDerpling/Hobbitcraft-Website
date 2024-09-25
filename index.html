@@ -11,20 +11,19 @@
     <link href="dark.css" rel="stylesheet">
     <title>Hobbitcraft SMP</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/ic/apple-touch-icon.png?v=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/ic/favicon-32x32.png?v=1">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/ic/favicon-16x16.png?v=1">
-    <link rel="manifest" href="img/ic/site.webmanifest?v=1">
-    <link rel="mask-icon" href="img/ic/safari-pinned-tab.svg?v=1" color="#cd7b3a">
-    <link rel="shortcut icon" href="img/ic/favicon.ico?v=1">
-    <meta name="apple-mobile-web-app-title" content="Hobbitcraft">
-    <meta name="application-name" content="Hobbitcraft">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="img/ic/browserconfig.xml?v=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/ic/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/ic/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/ic/favicon-16x16.png?v=2">
+    <link rel="manifest" href="../img/ic/site.webmanifest?v=2">
+    <link rel="mask-icon" href="../img/ic/safari-pinned-tab.svg?v=2" color="#5bbad5">
+    <link rel="shortcut icon" href="../img/ic/favicon.ico?v=2">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="../img/ic/browserconfig.xml?v=2">
+    <meta name="theme-color" content="#3EC7F4">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
     <meta name="msapplication-config" content="img/ic/browserconfig.xml">
-    <meta name="theme-color" content="#cd7b3a">
+    <meta name="theme-color" content="#3EC7F4">
     <meta name="keywords" content="minecraft, smp, hobbitcraft, whitelisted, server, hermitcraft" />
 
     <meta property="og:type" content="Hobbitcraft">
@@ -34,11 +33,38 @@
     <meta property="og:image" content="https://hobbitcraft.cc/img/ic/navicon.png" />
 
 </head>
+<style>
+    .icon {
+        margin: 0.4rem;
+        width: 64px;
+        height: 64px;
+    }
+
+    .banner {
+        margin-bottom: 0.5rem;
+        margin-left: 1rem;
+        width: 12rem;
+        border-radius: 4px;
+    }
+
+    .w-45 {
+        width: 45% !important;
+    }
+
+    .w-55 {
+        width: 55% !important;
+    }
+
+    /* .btn-primary {
+        background-color: #cd7b3a !important;
+        border-color: #cd7b3a !important;
+    } */
+</style>
 
 <body>
     <div class="container-fluid HC-background">
         <div class="container text-center">
-            <img src="hctitle.webp" height="50%" width="50%">
+            <img src="hctitle.webp" height="73%" width="73%">
         </div>
     </div>
     <!--Navigation bar-->
@@ -52,46 +78,86 @@
         });
     </script>
     <!--end of Navigation bar-->
-    <div class="container">
-        <center>
-            <div class="row">
-                <div class="col">
-                    <h2 id="Hobbitcraft">Hobbitcraft SMP</h2>
-                    <p>Now boasting over 4 years of SMP-running experience; Hobbitcraft has a strong,
-                        committed and talented community always looking for new members.
-                        Apply to join our community today on the navbar!
-                        Also feel free to join our <a href='https://discord.gg/vrc6braHKe'>discord server here</a>
-                        or the navbar
+    <div class="container">                
+                    <h1 class="text-center id="Hobbitcraft><bold>Hobbitcraft SMP</bold></h1>
+                    <div style="text-align:center">
+                        <p>With over 4 years of SMP experience, Hobbitcraft is home to a talented and dedicated community. We're always excited to welcome new members!</p>
+                        <p><a href="/invite" target="_blank">Join our Discord</a> or apply via the navbar to become part of the adventure!</p>
+                      </div>
                     </p>
                     <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3>Server Info</h3>
-                    <p>Server IP: <kbd>play.hobbitcraft.cc</kbd></p>
-                    <p>Host: <kbd><a href="https://bloom.host">https://bloom.host</a></kbd></p>
-                    <p>Version: <kbd>1.20.4</kbd></p>
-                    <p>View Distance: <kbd>10</kbd></p>
-                    <p>Simulation Distance: <kbd>6</kbd></p>
-                </div>
-                <div class="col">
-                    <h3><a href="https://map.hobbitcraft.cc"><img src="img/dynmap.png" height="128" width="128"></a></h3>
-                    <p> Here you can view a 3D overview map of Hobbitcraft.&nbsp;</p>
-                </div>
-                <div class="col">
-                    <h3><a href="/donate">Donate</a></h3>
-                    <p>You can donate to keep the server running! You
-                        also get a cool role in the discord server as well as in game perks for doing so!</p>
-                </div>
-                <div class="col">
-                    <h3><a href="/files">Hobbitcraft Files</a></h3>
-                    
-                    <p>Here is where you can find all of the files like world downloads, resource packs, modpacks, and
-                        whatever else.</p>
-                </div>
-            </div>
-        </center>
+                
+                    <div class="row">
+                        <!-- C2S1 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="row">
+                                    <div class="text-center" class="col-4 col-md-6">
+                                        <h2 class="card-title col-12">Server Info</h2>
+                                    </div>
+                                </div>
+                                <div class="card-body row m-0">
+                                    <div class="col-12 col-md-100">
+                                        <p class="card-text">
+                                            <p><strong>Survival Server:</strong> <kbd>play.hobbitcraft.cc</kbd><br> Bedrock Port: <kbd>19132</kbd></p>
+                                            <p><strong>Creative Server:</strong> <kbd>creative.hobbitcraft.cc</kbd><br> Bedrock Port: <kbd>8888</kbd></p>
+                                            <p><strong>Host:</strong> <a href="https://bloom.host" target="_blank">Bloom Host</a></p>
+                                            <p><strong>Version:</strong><kbd>1.21.1</kbd></p>
+                                            <p><strong>View Distance:</strong> 10</p>
+                                            <p><strong>Simulation Distance:</strong> 6</p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- S7 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="row">
+                                    <div class="text-center" class="col-4 col-md-6">
+                                        <h2 class="card-title col-12">Dynmap</h2>
+                                    </div>
+                                </div>
+                                <div class="card-body row m-0">
+                                    <div class="col-12 col-md-40">
+                                        <p class="card-text">
+                                            <p>Explore our Minecraft world in real-time with Dynmap! This live map offers a bird’s-eye view of the entire server, letting you:</p>
+                                            <ul style="list-style-type: disc; text-align: left; display: inline-block;">
+                                            <li>View current player locations!</li>
+                                            <li>See the world in 3D!</li>
+                                            <li>Check out builds!</li>
+                                        </p>
+                                        <a href="https://map.hobbitcraft.cc" class="btn btn-primary">View Dynamp</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- S6 -->
+                        <div class="col-md-4 mb-3">
+                            <div class="card h-100">
+                                <div class="row">
+                                    <div class="text-center" class="col-4 col-md-6">
+                                        <h2 class="card-title col-12">Donate</h2>
+                                    </div>
+                                </div>
+                                <div class="card-body row m-0">
+                                    <div class="col-12 col-md-40">
+                                        <p class="card-text">
+                                            <p>Your donations help keep the server running smoothly! By contributing, you not only support the community but also receive exclusive rewards.</p>
+                                            <ul style="list-style-type: disc; text-align: left; display: inline-block;">
+                                              <li>Special role in our Discord server</li>
+                                              <li>Unique in-game perks</li>
+                                              <li>Access to exclusive events and content</li>
+                                            </ul>
+                                            <p>Thank you for helping us grow and improve the server for everyone!</p></p>
+                                        <a href="/donate"
+                                            class="btn btn-primary">Donate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous">
